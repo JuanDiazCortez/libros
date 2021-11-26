@@ -10,6 +10,7 @@ function Reservas({ credenciales, setCredenciales }) {
         <BrowseReservas
           credenciales={credenciales}
           setCredenciales={setCredenciales}
+
         />
       ) : (
         <h2>Sin Reservas</h2>

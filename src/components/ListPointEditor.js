@@ -20,20 +20,7 @@ function ListPointEditor({ credenciales }) {
 
   return (
     <div>
-      <ul >
-        {listPoint.map((position) => (
-          <li>
-            <div>
-              <p>{position.lat}</p>
-              <p>{position.lng}</p>
-              <p>{position.descripcion}</p>
-              <div>
-                <img src={position.img} alt="ER" />
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div>Lista</div>
     </div>
   );
 }

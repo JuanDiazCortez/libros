@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import shortid from "shortid";
+import "font-awesome/css/font-awesome.min.css";
+import img from "../components/ej1.jpg";
+
 import {
   useMapEvents,
   MapContainer,
@@ -24,7 +27,7 @@ function wrapper(list) {
   });
   return newList;
 }
-console.log(wrapper(JSON.parse(localStorage.getItem("posiciones"))));
+// console.log(wrapper(JSON.parse(localStorage.getItem("posiciones"))));
 function MyComponent() {
   const [markers, setmarkers] = useState(() => {
     let result = localStorage.getItem("posiciones");
@@ -38,7 +41,7 @@ function MyComponent() {
 
   const map = useMapEvents({
     click: (e) => {
-      console.log(`click map ${e.latlng}`);
+      //  console.log(`click map ${e.latlng}`);
       const { lat, lng } = e.latlng;
       markers.push({ lat, lng });
       L.marker([lat, lng], { icon }).addTo(map);
@@ -49,15 +52,37 @@ function MyComponent() {
 
   const mapa = useMapEvents({
     mouseover: (e) => {
-      console.log(`hover ${new Date()}}`);
+      //   console.log(`hover ${Object.keys(e.target)}}`);
+      //    console.log(`hover ${e.target.options}}`);
+    },
+  });
+
+  const ma = useMapEvents({
+    autopanstart: (e) => {
+      //   console.log("popup");
+      //  console.log(e.target._popup);
     },
   });
 
   /* componentDidMount */
   useEffect(() => {
     console.log("markers");
+
+    let opts = {
+      icon: new L.DivIcon({
+        className: "my-div-icon",
+        html: '<span class="my-div-span"><i class="fas fa-book"></i></span>',
+      }),
+      title: "bibliotecaaa",
+    };
     markers.map((item) => {
-      L.marker([item.lat, item.lng], { icon }).addTo(map);
+      let marker = L.marker([item.lat, item.lng], opts);
+      marker.bindTooltip("My Label", {
+        permanent: false,
+        className: "my-label",
+        offset: [0, 0],
+      });
+      marker.addTo(map);
     });
     localStorage.setItem("posiciones", JSON.stringify(markers));
   }, [markers]);
@@ -106,10 +131,13 @@ function MapaComponent({ credenciales }) {
           <Marker key={shortid.generate()} position={[marker.lat, marker.lng]}>
             <Popup>
               <div key={shortid.generate()}>
-                <p key={shortid.generate()}>marker.descripcion</p>
+                <p key={shortid.generate()}>{marker.descripcion}</p>
+                <p>{marker.lat}</p>
+                <p>{marker.lng}</p>
+                {console.log(marker)}
                 <img
                   key={shortid.generate()}
-                  src={marker.img}
+                  src="assets/biblio5.png"
                   alt={shortid.generate()}
                 />
               </div>

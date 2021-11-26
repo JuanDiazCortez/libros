@@ -10,18 +10,17 @@ function CardComponent({
   image,
   lDescription,
 }) {
+  const isReservedBook = (id) => {
+    if (typeof credenciales.reservas === "undefined") {
+      credenciales.reservas = [];
+    }
 
-const isReservedBook=(id)=>{
+    return (
+      credenciales.reservas.findIndex((element) => element.libro.id === id) > 0
+    );
+  };
 
-  if (typeof credenciales.reservas === "undefined") {
-    credenciales.reservas = [];
-  }
-
-  return  credenciales.reservas.find( element =>   element.libro.id === id  ) ;
-
-}
-
-console.log(isReservedBook(0));
+  // console.log(isReservedBook(0));
 
   const onReserva = (ev, libro) => {
     console.log(ev.target.checked);
@@ -33,11 +32,9 @@ console.log(isReservedBook(0));
 si es true checked significa que lo quiero agregar, pero podria estar en reservas 
 */
     if (checked) {
-      let newReserva={ libro:libro, fecha: new Date() };
+      let newReserva = { libro: libro, fecha: new Date() };
       console.log(newReserva);
       credenciales.reservas.push(newReserva);
-      
-      
     } else {
       /* esto pasa cuando descheckeamos un check 
          pasan 2 cosas. 
@@ -61,7 +58,7 @@ si es true checked significa que lo quiero agregar, pero podria estar en reserva
             type="checkbox"
             name={`card${id}`}
             value="reservar"
-            checked={ isReservedBook(id) ? 'checked': null }
+            checked={isReservedBook(id) ? "checked" : null}
             onChange={(ev) =>
               onReserva(ev, {
                 id,

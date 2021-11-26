@@ -35,37 +35,35 @@ function App() {
     */
     return true; // valido entro a la app
   };
+
+  if (!isValidCred(credenciales)) {
+    return <Login setter={storageCreds} />;
+  }
+
   return (
     <div>
-      {!isValidCred(credenciales) ? (
-        <Login setter={storageCreds} />
-      ) : (
-        <div className="flex">
-          <BrowserRouter>
-            <NavMenuComponent />
-            <div className="top ">
-              <Switch>
-                <Route path="/biblioteca">
-                  <Biblioteca
-                    credenciales={credenciales}
-                    setter={storageCreds}
-                  />
-                </Route>
+      <div className="flex">
+        <BrowserRouter>
+          <NavMenuComponent />
+          <div className="top ">
+            <Switch>
+              <Route path="/biblioteca">
+                <Biblioteca credenciales={credenciales} setter={storageCreds} />
+              </Route>
 
-                <Route path="/reservas">
-                  <Reservas
-                    credenciales={credenciales}
-                    setCredenciales={storageCreds}
-                  />
-                </Route>
-                <Route path="/mapas">
-                  <MapComponent credenciales={credenciales} />
-                </Route>
-              </Switch>
-            </div>
-          </BrowserRouter>
-        </div>
-      )}
+              <Route path="/reservas">
+                <Reservas
+                  credenciales={credenciales}
+                  setCredenciales={storageCreds}
+                />
+              </Route>
+              <Route path="/mapas">
+                <MapComponent credenciales={credenciales} />
+              </Route>
+            </Switch>
+          </div>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
