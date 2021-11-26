@@ -1,38 +1,216 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.tipos-doc {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.nav-main {
+  font-size: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px 5px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.search-body-first {
+  width: 50%;
+  position: absolute;
+}
+
+.btn {
+  background-color: #00ba87ed;
+  color: white;
+}
+.top {
+  width: 100%;
+  height: 100%;
+}
+.top-reservas {
+  background-image: url("../src/assets/reservas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/***************      ROUTER      *****************/
+
+/* .navbar-router {
+  width: 100%;
+  left: 50rem;
+  top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.nav-link {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+*/
+
+/***************      CARDS       *****************/
+.flex-grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0px 10px;
+  text-shadow: 2px 2px 5px black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
+  background-color: #00ba87ed;
   color: white;
+  top: 5rem;
+}
+.bibliotecas-moviles {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin: 1rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/************************       FORMULARIO REGISTRARSE     ******************/
+
+.formulario-container {
+}
+.body-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  width: 60%;
+  padding: 5px 20px;
+  margin: 10px 10px;
+}
+.container-form {
+  display: flex;
+  box-shadow: 0 0 40px -10px #000;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  background-color: #00ba87ed;
+}
+.container-form h2 {
+  text-align: center;
+}
+.tipos-doc {
+  display: flex;
+  flex-direction: row;
+}
+
+.dni,
+.lc,
+.du {
+  padding: 0px 10px;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+/************************       FORMULARIO LOGIN     ******************/
+
+.user-psw-container {
+  background-color: #61dbfb;
+  height: 50rem;
+  padding: 4rem;
+}
+
+.user-psw {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 0 0 40px -10px #000;
+  padding: 5rem 10rem;
+}
+
+.user-psw img {
+  display: block;
+  margin: auto;
+  height: 80px;
+}
+
+.user-psw h3 {
+  text-align: center;
+}
+
+.user-psw label {
+  text-align: left;
+  padding-top: 0.5rem;
+}
+
+.login-registrarse {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding-top: 1rem;
+}
+
+.btn-login {
+  width: 100%;
+}
+
+/****************************** RESERVA *********************************/
+
+.table {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-dark {
+  --bs-table-bg: #14213d;
+  --bs-table-hover-bg: #1d3557;
+}
+
+.table-light {
+  --bs-table-bg: #d8f3dc;
+  --bs-table-hover-bg: #b7e4c7;
+}
+
+.styleLabel {
+  text-shadow: 3px 3px 5px black;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.titleReservas {
+  text-shadow: 3px 3px 5px black;
+  font-weight: bolder;
+  color: #fff;
+}
+
+select {
+  margin: 16px;
 }

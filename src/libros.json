@@ -1,0 +1,150 @@
+{
+    "libros": [{
+            "nombre": "el principito",
+            "titulo": "El principito",
+            "autor": "Antoine de Saint-Exupéry",
+            "publicacion": 1943,
+            "descripcion": "Un pequeño príncipe parte de su asteroide a una travesía por el universo, en la cual descubre la extraña forma en que los adultos ven la vida y comprende el valor del amor y la amistad.",
+            "img": "imgLibros/principito.jpg"
+        },
+        {
+            "nombre": "rayuela",
+            "titulo": "Rayuela",
+            "autor": "Julio Cortázar",
+            "publicacion": 1963,
+            "descripcion": "Rayuela narra la historia de Horacio Oliveira, su protagonista, y su relación con «la Maga». La historia pone en juego la subjetividad del lector y tiene múltiples finales. A esta obra suele llamársela «antinovela», aunque el mismo Cortázar prefería denominarla «contranovela».",
+            "img": "imgLibros/rayuela.jpg"
+        },
+        {
+            "nombre": "harry potter y la piedra filosofal",
+            "titulo": "Harry Potter y la piedra filosofal",
+            "autor": "J. K. Rowling",
+            "publicacion": 1997,
+            "descripcion": "Harry Potter y la piedra filosofal (título original en inglés, Harry Potter and the Philosopher’s Stone), es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.",
+            "img": "imgLibros/harryPotter.jpg"
+        },
+        {
+            "nombre": "cuentos de grimm",
+            "titulo": "Cuentos de Grimm",
+            "autor": "Wilhelm Grimm, Hermanos Grimm, Jacob Grimm",
+            "publicacion": 1812,
+            "descripcion": "Cuentos de la infancia y del hogar es un célebre libro de cuentos de hadas alemán de tradición oral, recopilado por los hermanos Grimm, Jacob y Wilhelm",
+            "img": "imgLibros/cuentosGrimm.jpg"
+        },
+        {
+            "nombre": "bilembambudin o el ultimo mago",
+            "titulo": "Bilembambudin o El último mago",
+            "autor": "Elsa Bornemann",
+            "publicacion": 1979,
+            "descripcion": "Guiada por Jeremías, el último mago, Aldana llega al reino de Bilembambudín para cumplir una importante misión. Un dragón, un ratoncito charlatán, fantasmas, hombres-globo, la gata Babelunas... hasta los hijos de la Naturaleza colaboran para que pueda llegar a la meta. Gracias a su coraje, la joven protagonista vive apasionantes aventuras y, además, descubre un valioso secreto que compartirá con los lectores.",
+            "img": "imgLibros/elUltimoMago.jpg"
+        },
+        {
+            "nombre": "charlie y la fabrica de chocolate",
+            "titulo": "Charlie y la fábrica de chocolate",
+            "autor": "Roald Dahl",
+            "publicacion": 1979,
+            "descripcion": "Charlie y la fábrica de chocolate es una novela infantil que narra la historia de Charlie Bucket, un niño rodeado de pobreza extrema, cuyo destino cambia al conocer al excéntrico Willy Wonka, dueño de la fábrica de chocolate cercana a su casa.",
+            "img": "imgLibros/charlieFabrica.jpg"
+        },
+        {
+            "nombre": "hansel y gretel",
+            "titulo": "Hansel y Gretel",
+            "autor": "Hermanos Grimm",
+            "publicacion": 1812,
+            "descripcion": "Hansel y Gretel (en alemán, Hänsel und Gretel) es un cuento de hadas alemán recogido por los hermanos Grimm y publicado en 1812",
+            "img": "imgLibros/hanselGretel.jpg"
+        },
+
+        {
+            "nombre": "los tres mosqueteros",
+            "titulo": "Los tres mosqueteros",
+            "autor": "Alejandro Dumas",
+            "publicacion": 1844,
+            "descripcion": "La novela narra las aventuras de un joven gascón de 18 años, conocido como d'Artagnan, que se va a París para hacerse mosquetero. Los verdaderos mosqueteros son Athos, Porthos y Aramis, amigos inseparables que viven bajo el lema «Uno para todos, todos para uno». D'Artagnan primero se enfrenta separadamente a cada uno de ellos, pero terminan siendo sus amigos",
+            "img": "imgLibros/tresMosqueteros.jpg"
+        },
+
+        {
+            "nombre": "orgullo y prejuicio",
+            "titulo": "Orgullo y prejuicio",
+            "autor": "Jane Austen",
+            "publicacion": 1813,
+            "descripcion": "Orgullo y prejuicio es una novela de desarrollo personal, en la que las dos figuras principales, Elizabeth Bennet y Fitzwilliam Darcy, cada uno a su manera y, no obstante, de forma muy parecida, deben madurar para superar algunas crisis y aprender de sus errores para poder encarar el futuro en común, superando el orgullo de clase de Darcy y los prejuicios de Elizabeth hacia él.",
+            "img": "imgLibros/orgulloPrejuicio.jpg"
+        },
+
+        {
+            "nombre": "diario de ana frank",
+            "titulo": "Diario de Ana Frank",
+            "autor": "Ana Frank",
+            "publicacion": 1952,
+            "descripcion": "Con el título de El diario de Ana Frank se conoce la edición de los diarios personales escritos por Ana Frank entre el 12 de junio de 1942 y el 1 de agosto de 1944 en un total de tres cuadernos conservados en la actualidad,1​ donde relata su historia como adolescente y los dos años en que permaneció oculta de los nazis, con su familia alemana de origen judío, en Ámsterdam durante la Segunda Guerra Mundial hasta que fue descubierta.",
+            "img": "imgLibros/anaFrank.jpg"
+        },
+
+        {
+            "nombre": "frankenstein o el moderno prometeo",
+            "titulo": "Frankenstein o el moderno Prometeo",
+            "autor": "Mary Shelley",
+            "publicacion": 1823,
+            "descripcion": "Frankenstein o el moderno Prometeo, o simplemente Frankenstein (título original en inglés: Frankenstein; or, The Modern Prometheus), es una obra literaria enmarcada en la tradición de la novela gótica, el texto habla de temas tales como la moral científica, la creación y destrucción de vida y el atrevimiento de la humanidad en su relación con Dios. De ahí, el subtítulo de la obra: el protagonista intenta rivalizar en poder con Dios, como una suerte de Prometeo moderno que arrebata el fuego sagrado de la vida a la divinidad. Aunque Frankenstein está impregnado de elementos de la novela gótica y el movimiento romántico, el escritor y editor de ciencia ficción Brian Aldiss ha argumentado que debería considerarse la primera historia verdadera de ciencia ficción.",
+            "img": "imgLibros/frankenstein.jpg"
+        },
+
+        {
+            "nombre": "la casa de bernarda alba",
+            "titulo": "La casa de Bernarda Alba",
+            "autor": "Federico García Lorca",
+            "publicacion": 1945,
+            "descripcion": "La casa de Bernarda Alba es una obra teatral en tres actos escrita en 1936 por Federico García Lorca. Expone la historia de Bernarda Alba, que tras haber enviudado por segunda vez a los 60 años, decide vivir los siguientes ocho años en el más riguroso luto. Lorca describe la 'España profunda' de principios del siglo XX, caracterizada por una sociedad tradicional muy violenta en la que el papel que la mujer juega es secundario. Otros rasgos destacados son el fanatismo religioso y el miedo a descubrir la intimidad. Con Bernarda viven sus cinco hijas (Angustias, Magdalena, Amelia, Martirio y Adela), su madre y sus dos criadas. Entre estas últimas se encuentra Poncia, una criada que ha vivido muchos años al servicio de la anciana.",
+            "img": "imgLibros/bernardaAlba.jpg"
+        },
+
+        {
+            "nombre": "dracula",
+            "titulo": "Drácula",
+            "autor": "Bram Stoker",
+            "publicacion": 1897,
+            "descripcion": "Drácula es una novela publicada en 1897 por el irlandés Bram Stoker, a raíz de la cual, su personaje antagonista, el conde Drácula, se volvió el arquetipo de vampiro occidental por antonomasia, llegando a ser considerado el vampiro más famoso. Se dice que el escritor se basó en las conversaciones que mantuvo con el erudito húngaro Arminius Vámbéry, quien le habló de Vlad Drăculea. La novela, escrita de manera epistolar, presenta otros temas, como el papel de la mujer en la época victoriana, la ciencia y la superstición, la sexualidad, la inmigración, el colonialismo o el folclore.",
+            "img": "imgLibros/dracula.jpg"
+        },
+
+        {
+            "nombre": "la invencion de morel",
+            "titulo": "La invención de Morel",
+            "autor": "Adolfo Bioy Casares",
+            "publicacion": 1940,
+            "descripcion": "En la novela La invención de Morel, la primera del escritor argentino Adolfo Bioy Casares, se plantea el tema del eterno regreso y se despliega una discusión sobre la percepción del hombre, al ubicarse en el mundo del que forma parte. En ese sentido, el protagonista se percibe frente a una situación fantástica que le permite ampliar su concepto de realidad y evaluar sus consideraciones hacia la realidad y lo fantástico. Entonces, debatimos, aquí, el tema de la percepción del tiempo, a través de eterno retorno, y de lo fantástico como elemento que constituye la realidad humana, en la novela de Bioy Casares.",
+            "img": "imgLibros/invensionMorel.jpg"
+        },
+
+        {
+            "nombre": "el Reino del Reves",
+            "titulo": "El Reino del Reves",
+            "autor": "Maria Elena Walsh",
+            "publicacion": 2000,
+            "descripcion": "En El Reino del Revés se encuentran las canciones más conocidas de María Elena Walsh y otros bellos poemas: 'Manuelita la Tortuga', 'Marcha de Osías', 'Canción del Jardinero', 'Twist del Mono Liso', 'La Reina Batata', 'El Reino del Revés'... Con este libro vas a disfrutar y a cantar desde la primera hasta la última página.",
+            "img": "imgLibros/reinoDelReves.png"
+        },
+
+        {
+            "nombre": "las viudas de los jueves",
+            "titulo": "Las Viudas De Los Jueves",
+            "autor": "Piñeiro Claudia",
+            "publicacion": 2014,
+            "descripcion": "Detrás de las altas paredes perimetrales, más allá de los portones reforzados por barreras y flanqueados por garitas de vigilancia, se encuentra Altos de la Cascada. Afuera, la ruta, la barriada popular de Santa María de los Tigrecitos, la autopista, la ciudad, el resto del mundo. En Altos de la Cascada viven familias que llevan un mismo estilo de vida y que quieren mantenerlo cueste lo que cueste. Allí, en el country, un grupo de amigos se reúne semanalmente lejos de las miradas de sus hijos, sus empleadas domésticas y sus esposas, quienes, excluidas del encuentro varonil, se autodenominan, bromeando, las viudas de los jueves. Pero una noche la rutina se quiebra y ese hecho permite descubrir, en un país que se desmorona, el lado oscuro de una vida perfecta.",
+            "img": "imgLibros/viudas.png"
+        },
+
+        {
+            "nombre": "sin rumbo",
+            "titulo": "Sin rumbo",
+            "autor": "Eugenio Cambaceres",
+            "publicacion": 1885,
+            "descripcion": "Sin rumbo narra la historia de Andrés, un joven que, cansado del aburrimiento de su hacienda, decide ir a la casa del puestero y comienza un romance clandestino con la hija del mismo. Donata, a quien abandona luego de dejar embarazada. En la ciudad concurre al Teatro Colón y comienza un romance con una cantante de ópera, pero al poco tiempo se aburre y decide regresar a su hacienda de campo.",
+            "img": "imgLibros/sinRumbo.jpg"
+        }
+
+    ]
+}
